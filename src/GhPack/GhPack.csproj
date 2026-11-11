@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- net7.0 loads in Rhino 8 (.NET 7/8) and Rhino 9, on Windows and Mac. -->
+    <TargetFramework>net7.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>GhPack</RootNamespace>
+    <AssemblyName>GhPack</AssemblyName>
+    <TargetExt>.rhp</TargetExt>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>0.1.0</Version>
+    <Title>GhPack</Title>
+    <Authors>Ethan Otto</Authors>
+    <Description>Profiles (modpacks) for Grasshopper plugins: select which .gha files load.</Description>
+    <!-- The RhinoCommon package ships net48 reference assemblies; they are used for compile only. -->
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="RhinoCommon" Version="8.0.23304.9001" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="GhPack.rui" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../GhPack.Core/GhPack.Core.csproj" />
+  </ItemGroup>
+</Project>

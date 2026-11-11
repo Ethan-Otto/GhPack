@@ -1,0 +1,14 @@
+---
+name: GhPack
+version: 0.1.0
+authors:
+- Ethan Otto
+description: 'Profiles (modpacks) for Grasshopper plugins: choose which .gha files load, then open Grasshopper.'
+url: https://github.com/Ethan-Otto/GhPack
+icon: icon.png
+keywords:
+- grasshopper
+- plugins
+- profiles
+- modpack
+- load time

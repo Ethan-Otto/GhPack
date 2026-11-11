@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GhPack.Core/GhPack.Core.csproj" />
+    <Project Path="src/GhPack/GhPack.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/GhPack.Tests/GhPack.Tests.csproj" />
+  </Folder>
+</Solution>
