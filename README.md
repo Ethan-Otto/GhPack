@@ -1,4 +1,19 @@
-# GhPack
+<p align="center">
+  <img src="package/icon.png" width="96" alt="GhPack icon">
+</p>
+
+<h1 align="center">GhPack</h1>
+
+<p align="center">
+  Plugin profiles for Grasshopper. Load only the plugins that a job needs.
+</p>
+
+<p align="center">
+  <a href="https://github.com/Ethan-Otto/GhPack/actions/workflows/build.yml"><img src="https://github.com/Ethan-Otto/GhPack/actions/workflows/build.yml/badge.svg" alt="build"></a>
+  <a href="https://github.com/Ethan-Otto/GhPack/releases/latest"><img src="https://img.shields.io/github/v/release/Ethan-Otto/GhPack" alt="release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Ethan-Otto/GhPack" alt="license"></a>
+  <img src="https://img.shields.io/badge/tested%20on-Rhino%209%20macOS-1f883d" alt="tested on Rhino 9 macOS">
+</p>
 
 Profiles ("modpacks") for Grasshopper plugins. Pick a group of plugins, then open Grasshopper with
 only that group loaded. Fewer plugins means a faster Grasshopper start and a shorter component ribbon.
@@ -6,15 +21,40 @@ only that group loaded. Fewer plugins means a faster Grasshopper start and a sho
 GhPack is a Rhino plugin (`.rhp`). It has to be: a Grasshopper plugin loads *with* Grasshopper, which
 is too late to decide what Grasshopper loads.
 
-| Open Grasshopper with a profile | Select the plugins in a profile |
-|---|---|
-| ![Profile picker](docs/picker.png) | ![Profile editor](docs/editor.png) |
+## Before and after
+
+The same Rhino with 14 Grasshopper plugins installed.
+
+**All plugins**
+
+![Grasshopper ribbon with all plugins loaded](docs/ribbon-all.png)
+
+**The `Geometry` profile (5 plugins)**
+
+![Grasshopper ribbon with the Geometry profile](docs/ribbon-profile.png)
+
+## Screenshots
+
+<table>
+  <tr>
+    <th>Open Grasshopper with a profile</th>
+    <th>Select the plugins in a profile</th>
+  </tr>
+  <tr>
+    <td valign="top"><img src="docs/picker.png" width="320" alt="Profile picker"></td>
+    <td valign="top"><img src="docs/editor.png" width="520" alt="Profile editor"></td>
+  </tr>
+</table>
 
 ## Use
 
 1. Click the GhPack toolbar button (green stacked plates), or run `GhPackLaunch`.
 2. Pick a profile and click **Open Grasshopper**.
 3. To change what a profile loads, click **Select Plugins…**, tick the plugins, and **Save**.
+
+<img src="docs/toolbar.png" width="347" alt="The GhPack toolbar button in Rhino">
+
+*The GhPack button, in the Rhino sidebar.*
 
 Use `GhPackLaunch` instead of the `Grasshopper` command. Grasshopper cannot unload a plugin, so if it
 has already loaded its plugins in this Rhino session, a profile change takes effect after you restart
