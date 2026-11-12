@@ -38,23 +38,23 @@ The same Rhino with 14 Grasshopper plugins installed.
 <table>
   <tr>
     <th>Open Grasshopper with a profile</th>
-    <th>Select the plugins in a profile</th>
+    <th>The toolbar button in Rhino</th>
   </tr>
   <tr>
-    <td valign="top"><img src="docs/picker.png" width="320" alt="Profile picker"></td>
-    <td valign="top"><img src="docs/editor.png" width="520" alt="Profile editor"></td>
+    <td valign="top"><img src="docs/picker.png" width="400" alt="Profile picker"></td>
+    <td valign="top"><img src="docs/toolbar.png" width="347" alt="The GhPack toolbar button in Rhino"></td>
   </tr>
 </table>
+
+**Select the plugins in a profile**
+
+![Profile editor](docs/editor.png)
 
 ## Use
 
 1. Click the GhPack toolbar button (green stacked plates), or run `GhPackLaunch`.
 2. Pick a profile and click **Open Grasshopper**.
 3. To change what a profile loads, click **Select Plugins…**, tick the plugins, and **Save**.
-
-<img src="docs/toolbar.png" width="347" alt="The GhPack toolbar button in Rhino">
-
-*The GhPack button, in the Rhino sidebar.*
 
 Use `GhPackLaunch` instead of the `Grasshopper` command. Grasshopper cannot unload a plugin, so if it
 has already loaded its plugins in this Rhino session, a profile change takes effect after you restart
